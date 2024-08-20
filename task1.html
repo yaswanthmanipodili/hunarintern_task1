@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Yaswanthmani's Homepage</title>
+<link rel="stylesheet" href="task1.css">
+</head>
+<body>
+<header>
+<div class="container">
+<h1>Yaswanthmani</h1>
+<nav>
+<ul>
+<li><a href="#about" onclick="showSection('about')">About Me</a></li>
+<li><a href="#portfolio" onclick="showSection('portfolio')">Portfolio</a></li>
+<li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+<li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<h2>Welcome to my personal homepage.</h2>
+<img src="https://media.surreyschools.ca/media/Default/pgg/130764/Welcome.jpg" alt="Default Image" id="default-image">
+<main>
+<div class="section" id="about">
+<div class="container">
+<h1>About Me</h1>
+<p>My name is YASWANTHMANI PODILI</p>
+<p>My father name is KONDALARAO PODILI</p>
+<p>My mother name is RAMADEVI PODILI</p>
+<p>I am from MADDIPADU</p>
+<p>I am a STUDENT</p>
+<p>I am studying B.Tech in QIS College of Engineering and Technology</p>
+<p>I am in 3rd year in the branch of CS-IOT (Computer Science, Internet of Things, and Cyber Security)</p>
+</div>
+</div>
+<div class="section" id="portfolio">
+<div class="container">
+<h1>Portfolio</h1>
+<p>I have done a project named Task Manager which is useful for project managing. 
+I have done this in 4th semester of my B.Tech.</p>
+</div>
+</div>
+<div class="section" id="skills">
+<div class="container">
+<h1>Skills</h1>
+<h3>Qualifications:</h3>
+<p>I am studying 3rd year B.Tech in QIS College of Engineering and Technology, Ongole.</p>
+<p>I have completed my Intermediate in Narayana Jr. College, ongole.</p>
+<p>I have completed my schooling in KYGHS .GOVT MAddipadu.</p>
+<p>I have some basic knowledge of coding languages like HTML, CSS, JAVA, JS, PYTHON, C</p>
+<p>I learnt the coding languages and certified by known platforms like GreatLearning, LinkedIn Learning, Sololearn, etc.</p>
+</div>
+</div>
+<div class="section" id="contact">
+<div class="container">
+<h1>Contact</h1>
+<h2>Via</h2>
+<a href="https://www.linkedin.com/in/yash-yash-14a062291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+<a href="https://github.com/Rama-Sai-Shashank" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+<a href="https://www.instagram.com/yaswanthmani___/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+<a href="https://wa.me/9032736458" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+<a href="mailto:yaswanthmanipodili4@gmail.com"><i class="fas fa-envelope"></i>Email</a>
+</div>
+</div>
+</main>
+<footer>
+<div class="container">
+<p>&copy; 2024 Yaswanthmani. All rights reserved.</p>
+<p>Follow me on social media:</p>
+<a href="https://www.linkedin.com/in/rama-sai-shashank-58b05a291" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
+<a href="https://github.com/yaswanthmanipodili" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+<a href="https://www.instagram.com/yaswanthmani___/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+<a href="https://wa.me/9032736458" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+</div>
+</footer>
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+
+        const activeSection = document.getElementById(sectionId);
+        activeSection.style.display = 'block';
+
+        // Hide default image when a section is shown
+        document.getElementById('default-image').style.display = 'none';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // No section is shown by default
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
